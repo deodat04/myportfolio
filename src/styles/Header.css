@@ -1,0 +1,54 @@
+/* Header.css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 1.7rem 1rem;
+  background-color: #1f252e;
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: auto;
+  align-items: center;
+}
+
+
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.97rem;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  padding: 0.4rem 1rem;
+}
+
+nav a.active,
+nav a:hover {
+  color: #00e8f8;
+  border-radius: 1rem;
+  transition: all.3s ease-in-out;
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.4rem 1rem;
+}
+
+.nav-link a:hover,
+.nav-link.active {
+  color: #00e8f8;
+}
+
+
+.navbar-toggler-icon {
+  color: #fff;
+}

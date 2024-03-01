@@ -1,0 +1,22 @@
+.card {
+  box-shadow: #00E8F8; /* Lueur bleue */
+}
+
+.category-title {
+  font-family: 'Courier New', Courier, monospace; /* Police monospace */
+  text-align: center; /* Centrer le texte */
+  color: white; /* Couleur blanche */
+  font-size: 1.2rem; /* Taille de police plus petite */
+  text-transform: uppercase; /* Mettre en majuscules */
+  letter-spacing: 2px; /* Espacement des lettres */
+}
+
+.custom-icon-row {
+  display: flex;
+  justify-content: space-around; /* Espacement égal entre les icônes */
+  align-items: center;
+  flex-wrap: wrap; /* Permet aux icônes de passer à la ligne si nécessaire */
+}
+.custom-icon-row .icon {
+  margin: 7px; /* Espacement entre les icônes */
+}
