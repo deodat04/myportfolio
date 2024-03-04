@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #1f252e;
+  background-color: #F5F5DC;
+  /* background-color: #1f252e; */
 }
 
 .main {
@@ -17,16 +18,14 @@
 .main h1 {
   font-size: 2.5rem;
   font-weight: 600;
-  color: #fff;
-  /* animation: check 1s ease forwards;
-      animation-delay: .1s; */
+  color: #000000;
 }
 
 .main p {
   margin-top: 1rem;
   /*descend*/
   font-size: 0.98rem;
-  color: #fff;
+  color: #000000;
 }
 
 .main h1 span:nth-child(1) {
@@ -35,7 +34,7 @@
 }
 
 .main h1 span:nth-child(2) {
-  color: #00e8f8;
+  color: #213F99;
 }
 
 .detail {
@@ -45,9 +44,9 @@
 }
 
 .social a {
-  color: #00e8f8;
+  color: #213F99;
   font-size: 1rem;
-  border: 1.6px solid #00e8f8;
+  border: 1.6px solid #213F99;
   border-radius: 100%;
   padding: 0.45rem;
   /*les trois lignes de haut sont pour creer les cercles qui contiennent les icones*/
@@ -67,8 +66,8 @@
 
 .social a:hover {
   color: #1f252e;
-  background-color: #00e8f8;
-  box-shadow: 0 0 20px #00e8f8;
+  background-color: #213F99;
+  box-shadow: 0 0 20px #213F99;
   transition: all 0.3s ease-in-out;
 }
 
@@ -79,9 +78,21 @@
   /*les lignes qui suivent place img en face de p, met la lueur en bas de img et reduit img*/
   -webkit-box-shadow: 0 10px 10px -10px #000000;
   -moz-box-shadow: 0 10px 10px -10px #000000;
-  box-shadow: 0px 16px 4px -10px #00e8f8;
+  box-shadow: 0px 16px 4px -10px #213F99;
   width: 528px;
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .detail, .images {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 #title_skills {
@@ -139,7 +150,7 @@
 .layer {
   width: 100%;
   height: 0;
-  background: #00e8f8;
+  background: #213F99;
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -190,7 +201,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: 0 0 5px #00e8f8;
+  box-shadow: 0 0 5px #213F99;
   transition: all 0.3s ease-in-out;
   opacity: 0; /* Ajoutez cette ligne pour masquer les éléments */
   pointer-events: none; /* Ajoutez cette ligne pour désactiver les interactions avec les éléments*/
@@ -225,9 +236,9 @@ column ul {
 }
 
 .column a {
-  color: #00e8f8;
+  color: #213F99;
   font-size: 1rem;
-  border: 1.6px solid #00e8f8;
+  border: 1.6px solid #213F99;
   border-radius: 100%;
   padding: 0.45rem;
   /*les trois lignes de haut sont pour creer les cercles qui contiennent les icones*/
@@ -241,32 +252,32 @@ column ul {
 
 .column a:hover {
   color: #1f252e;
-  background-color: #00e8f8;
-  box-shadow: 0 0 20px #00e8f8;
+  background-color: #213F99;
+  box-shadow: 0 0 20px #213F99;
   transition: all 0.3s ease-in-out;
 }
 
 .Languages {
-  color: #00e8f8;
+  color: #213F99;
 }
 
 #tools_dev {
-  color: #00e8f8;
+  color: #213F99;
 }
 
 #tools_soc {
-  color: #00e8f8;
+  color: #213F99;
 }
 
 #tools_design {
-  color: #00e8f8;
+  color: #213F99;
 }
 
 .btn {
   display: flex;
   margin-top: 0.3rem;
   padding: 1rem 3rem;
-  color: #00e8f8;
+  color: #213F99;
   font-size: 1.2rem; /* Ajouter une marge au-dessus du bouton */
 }
 
@@ -274,16 +285,16 @@ column ul {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid #00e8f8;
+  border: 1px solid #213F99;
   padding: 14px 50px;
   border-radius: 6px;
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   transition: background 0.75s;
 }
 
 .btn:hover {
-  background: #00e8f8;
+  background: #213F99;
 }
 
 footer {
