@@ -1,63 +1,136 @@
-import picture from '../assets/mitm2.jpg'
+import React, { useState } from "react";
+import "../styles/Contact.scss"; // Inclusion du fichier SCSS correspondant au design
+import axios from "axios";
 
-function Contact(){
-    return(
-        <div id ="about"> //change the id to do responsive
-        <div className="containeur">
-            <div className="row">
-                <div className="about-col-1">
-                    <img src={picture}/>  //change
-                </div>
-                <div className="about-col-2">
-                    <h1 className="sub-title">About Me</h1> 
-                    <p> Je m'appelle Déodat ADANDEDJAN, nom de dev : @deodat04. Ma passion est tournée vers tout ce qui
-                        touche à l'innovation, à la technologie et aux sciences informatiques. Très vite après
-                        l'obtention de mon Baccalauréat série scientifique, j'ai commencé mes recherches dans cet
-                        univers si captivant. J'ai dès lors entamé mes études à l'Institut de Formation et de Recherche
-                        en Informatique (IFRI) en spécialité de Génie Logiciel. Actuellement en 3ème année de
-                        Licence, j'ai pu apprendre énormément et développer plusieurs compétences. Cela ne m'a pas
-                        empêché de suivre des formations dans d'autres branches de l'informatique, telles que le design
-                        graphique et la cybersécurité (IBM). Je n'ai pas fini d'apprendre et d'explorer ce grand univers
-                        qu'est l'informatique mais avec de la détermination tout est possible. </p>
-                    <div className="tab-titles">
-                        <p className="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                        <p className="tab-links" onclick="openTab('experience')">Experience</p>
-                        <p className="tab-links" onclick="openTab('education')">Education</p>
-                    </div>
-                    <div className="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Développement d'applications</span>Développement d'application desktop</li>
-                            <li><span>Développement Web</span>Développement d'application Web</li>
-                            <li><span>UI/UX</span>Design d'interfaces web et d'applications</li>
-                            <li><span>Analyse SOC</span>Analyse de systemes pour la sécurité</li>
+function Contact() {
+  const [state, setState] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-                        </ul>
-                    </div>
-                    <div className="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Août 2023 - Septembre 2023</span>Stage Academique à l'Institut Ola Technologie</li>
-                        </ul>
-                    </div>
-                    <div className="tab-contents" id="education">
-                        <ul>
-                            <li><span>Juillet 2023</span> 2ème annnée de license en Génie Logiciel à l'IFRI
-                                (Institut de Formation et de Recherche en Informatique)</li>
-                                <li><span>Août 2023</span> NSE 3 Network Security Associate by Fortinet </li>
-                            <li><span>Juillet 2023</span> NSE 2 Network Security Associate by Fortinet </li>
-                            <li><span>Juin 2023</span> NSE 1 Network Security Associate by Fortinet </li>
-                            <li><span>Juin 2023</span> Badge Cybersecurity Fundamentals by IBM, ITExperience INC
-                            </li>
-                            <li><span>Décembre 2022 à Janvier 2023</span>Formation en Design graphique</li>
-                            <li><span>Juillet 2022</span> Formation en Anglais à TBC Africa (A2 elementary level)
-                            </li>
-                            <li><span>2021</span>BAC D au College Catholique Père Aupiais(Mention Bien)</li>
-                        </ul>
-                    </div>
+  const { name, email, subject, message } = state;
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Vérifier si tous les champs sont remplis
+    if (!name || !email || !subject || !message) {
+      alert("Veuillez compléter tous les champs.");
+      return;
+    }
+
+    try {
+      await axios.post("/api/contact", state);
+      // Réinitialiser le formulaire après l'envoi
+      setState({ name: "", email: "", subject: "", message: "" });
+      alert("Form submitted successfully!");
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("An error occurred while submitting the form. Please try again later.");
+    }
+  };
+
+  const handleInputChange = (e) => {
+    let { name, value } = e.target;
+    setState({ ...state, [name]: value });
+  };
+  
+  return (
+    <section className="contact-section">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-10">
+            <div className="wrapper">
+              <div className="row no-gutters">
+                <div className="col-md-6">
+                  <div className="contact-wrap w-100 p-lg-5 p-4">
+                    <h3 className="mb-4">Send us a message</h3>
+                    <form
+                      id="contactForm"
+                      className="contactForm"
+                      onSubmit={handleSubmit}
+                    >
+                      <div className="row">
+                        <div className="col-md-12">
+                          <div className="form-group">
+                            <input
+                              type="text"
+                              className="form-control"
+                              name="name"
+                              placeholder="Name"
+                              onChange={handleInputChange}
+                              value={name}
+                            />
+                          </div>
+                        </div>
+                        <div className="col-md-12">
+                          <div className="form-group">
+                            <input
+                              type="email"
+                              className="form-control"
+                              name="email"
+                              placeholder="Email"
+                              onChange={handleInputChange}
+                              value={email}
+                            />
+                          </div>
+                        </div>
+                        <div className="col-md-12">
+                          <div className="form-group">
+                            <input
+                              type="text"
+                              className="form-control"
+                              name="subject"
+                              placeholder="Subject"
+                              onChange={handleInputChange}
+                              value={subject}
+                            />
+                          </div>
+                        </div>
+                        <div className="col-md-12">
+                          <div className="form-group">
+                            <textarea
+                              type="text"
+                              className="form-control"
+                              name="message"
+                              placeholder="Message"
+                              cols="30"
+                              rows="6"
+                              onChange={handleInputChange}
+                              value={message}
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div className="col-md-12">
+                          <div className="form-group">
+                            <input
+                              type="submit"
+                              value="Send Message"
+                              className="btn btn-primary"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </div>
+                <div className="col-md-6 d-flex align-items-stretch">
+                  <div className="info-wrap w-100 p-lg-5 p-4 img">
+                    <h3>Contact us</h3>
+                    <p className="mb-4">
+                      We're open for any suggestion or just to have a chat
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        </div>
-    )
+      </div>
+    </section>
+  );
 }
 
 export default Contact;

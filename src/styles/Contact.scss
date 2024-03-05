@@ -1,0 +1,171 @@
+.contact-section {
+  padding: 7em 0;
+  background-color: #213F99;
+  /* Définir la couleur de fond du conteneur */
+}
+
+.contact-wrap {
+  background: none;
+
+  /* Retirer le dégradé de fond */
+  h3 {
+    color: black;
+  }
+}
+
+.form-control {
+  height: 62px;
+  background: none;
+  /* Retirer le fond */
+  color: black;
+  font-size: 16px;
+  border-radius: 5px;
+  /* Ajouter des coins arrondis aux champs */
+  border: 1px solid #ccc;
+  /* Ajouter une bordure */
+  margin-bottom: 10px;
+  /* Ajouter de l'espace entre les champs */
+  padding: 10px;
+
+  /* Ajouter du rembourrage */
+  &::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: none;
+  }
+
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  &:-ms-input-placeholder {
+    /* IE 0+ */
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  &:focus,
+  &:active {
+    background: none;
+    /* Retirer le fond au focus */
+    border-color: #213F99 !important;
+    /* Modifier la couleur de la bordure au focus */
+    outline: 2px solid #213F99;
+    /* Ajouter une bordure de contour au focus */
+  }
+}
+
+.btn-primary {
+  background: #213F99 !important;
+  border-color: #213F99 !important;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: white !important;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+
+.info-wrap {
+  h3 {
+    color: #000;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: #213F99;
+      content: "";
+    }
+  }
+
+  .dbox {
+    width: 100%;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+
+      span {
+        font-weight: 400;
+        color: #000;
+        
+      }
+
+      a {
+        color: rgba(0, 0, 0, 0.3);
+        
+      }
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+
+      span {
+        font-size: 20px;
+        color: #000;
+      }
+    }
+
+    .text {
+      width: calc(100% - 50px);
+      font-family: 'Courier New', Courier, monospace;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: 'Courier New', Courier, monospace;
+  color: #000;
+}
+
+a {
+  transition: 0.3s all ease;
+  color: #213F99;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none;
+  }
+}
+
+#contactForm {
+  .form-control {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
+
+.mb-4{
+  font-family: 'Courier New', Courier, monospace;
+}

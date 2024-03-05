@@ -2,6 +2,7 @@ import React from "react";
 // import Header from "./Header";
 import picture from "../assets/mitm2.jpg";
 import ContainerSkills from "./ContainerSkills";
+import Type from "./Type";
 import "../styles/Home.css";
 import ContainerServices from "./ContainerServices";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -20,9 +21,12 @@ function Home() {
               <span style={{ fontFamily: "monospace" }}>Hi, It's Me</span>{" "}
               <br /> I'm <span style={{ color: "#213F99" }}>@deodat04</span>
             </h1>
-            <p style={{ fontFamily: "monospace" }}>
-              Fullstack Developer <br /> console.log("Welcome in my world"){" "}
-            </p>
+            <h1 style={{ fontFamily: "monospace", color: "#213F99", fontSize: 30 }}>
+            <Type /> 
+            </h1>
+            {/* <p style={{ fontFamily: "monospace" }}>
+             console.log("Welcome in my world"){" "}
+            </p> */}
             <div className="social">
               <a href="https://github.com/deodat04">
                 <i className="bi bi-github"></i>

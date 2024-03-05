@@ -1,63 +1,72 @@
-import picture from '../assets/mitm2.jpg'
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
+import { ImPointRight } from "react-icons/im";
+import CloudSkills from "./CloudSkills";
 
-function About(){
-    return(
-        <div id ="about"> //change the id to do responsive
-        <div className="containeur">
-            <div className="row">
-                <div className="about-col-1">
-                    <img src={picture}/>  //change
-                </div>
-                <div className="about-col-2">
-                    <h1 className="sub-title">About Me</h1> 
-                    <p> Je m'appelle Déodat ADANDEDJAN, nom de dev : @deodat04. Ma passion est tournée vers tout ce qui
-                        touche à l'innovation, à la technologie et aux sciences informatiques. Très vite après
-                        l'obtention de mon Baccalauréat série scientifique, j'ai commencé mes recherches dans cet
-                        univers si captivant. J'ai dès lors entamé mes études à l'Institut de Formation et de Recherche
-                        en Informatique (IFRI) en spécialité de Génie Logiciel. Actuellement en 3ème année de
-                        Licence, j'ai pu apprendre énormément et développer plusieurs compétences. Cela ne m'a pas
-                        empêché de suivre des formations dans d'autres branches de l'informatique, telles que le design
-                        graphique et la cybersécurité (IBM). Je n'ai pas fini d'apprendre et d'explorer ce grand univers
-                        qu'est l'informatique mais avec de la détermination tout est possible. </p>
-                    <div className="tab-titles">
-                        <p className="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                        <p className="tab-links" onclick="openTab('experience')">Experience</p>
-                        <p className="tab-links" onclick="openTab('education')">Education</p>
-                    </div>
-                    <div className="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Développement d'applications</span>Développement d'application desktop</li>
-                            <li><span>Développement Web</span>Développement d'application Web</li>
-                            <li><span>UI/UX</span>Design d'interfaces web et d'applications</li>
-                            <li><span>Analyse SOC</span>Analyse de systemes pour la sécurité</li>
 
-                        </ul>
-                    </div>
-                    <div className="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Août 2023 - Septembre 2023</span>Stage Academique à l'Institut Ola Technologie</li>
-                        </ul>
-                    </div>
-                    <div className="tab-contents" id="education">
-                        <ul>
-                            <li><span>Juillet 2023</span> 2ème annnée de license en Génie Logiciel à l'IFRI
-                                (Institut de Formation et de Recherche en Informatique)</li>
-                                <li><span>Août 2023</span> NSE 3 Network Security Associate by Fortinet </li>
-                            <li><span>Juillet 2023</span> NSE 2 Network Security Associate by Fortinet </li>
-                            <li><span>Juin 2023</span> NSE 1 Network Security Associate by Fortinet </li>
-                            <li><span>Juin 2023</span> Badge Cybersecurity Fundamentals by IBM, ITExperience INC
-                            </li>
-                            <li><span>Décembre 2022 à Janvier 2023</span>Formation en Design graphique</li>
-                            <li><span>Juillet 2022</span> Formation en Anglais à TBC Africa (A2 elementary level)
-                            </li>
-                            <li><span>2021</span>BAC D au College Catholique Père Aupiais(Mention Bien)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    )
+function About() {
+  return (
+    <Container fluid className="about-section">
+      <Container>
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col
+            md={7}
+            style={{
+              justifyContent: "center",
+              paddingTop: "30px",
+              paddingBottom: "50px",
+            }}
+          >
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              About <strong className="purple">me</strong>
+            </h1>
+            <Card className="quote-card-view">
+      <Card.Body>
+        <blockquote className="blockquote mb-0">
+          <p style={{ textAlign: "justify" }}>
+            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
+            from <span className="purple"> Bhubaneswar, India.</span>
+            <br />
+            I am currently employed as a software developer at Juspay.
+            <br />
+            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
+            Mesra.
+            <br />
+            <br />
+            Apart from coding, some other activities that I love to do!
+          </p>
+          <ul>
+            <li className="about-activity">
+              <ImPointRight /> Playing Games
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Writing Tech Blogs
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Travelling
+            </li>
+          </ul>
+
+          <p style={{ color: "rgb(155 126 172)" }}>
+            "Strive to build things that make a difference!"{" "}
+          </p>
+          <footer className="blockquote-footer">Soumyajit</footer>
+        </blockquote>
+      </Card.Body>
+    </Card>
+          </Col>
+          <Col
+            md={5}
+            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            className="about-img"
+          >
+            <CloudSkills />
+          </Col>
+        </Row>
+      </Container>
+    </Container>
+  );
 }
 
 export default About;
