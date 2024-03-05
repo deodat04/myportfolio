@@ -1,95 +1,72 @@
-import React, { useState } from 'react';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption,
-} from 'reactstrap';
+import { FiGithub } from 'react-icons/fi';
+import "../styles/Project.css";
+import Certification from './Certification';
 
-const items = [
-  {
-    src: 'https://picsum.photos/id/123/1200/400',
-    altText: 'Slide 1',
-    caption: 'Slide 1',
-    key: 1,
-  },
-  {
-    src: 'https://picsum.photos/id/456/1200/400',
-    altText: 'Slide 2',
-    caption: 'Slide 2',
-    key: 2,
-  },
-  {
-    src: 'https://picsum.photos/id/678/1200/400',
-    altText: 'Slide 3',
-    caption: 'Slide 3',
-    key: 3,
-  },
-];
-
-function Project(args) {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
-
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  };
-
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  };
-
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  };
-
-  const slides = items.map((item) => {
+const Project = () => {
     return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.src}
-      >
-        <img src={item.src} alt={item.altText} />
-        {/* <CarouselCaption
-          captionText={item.caption}
-          captionHeader={item.caption}
-        /> */}
-      </CarouselItem>
-    );
-  });
-
-  return (
-    <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-      {...args}
-    >
-      <CarouselIndicators
-        items={items}
-        activeIndex={activeIndex}
-        onClickHandler={goToIndex}
-      />
-      {slides}
-      <CarouselControl
-        direction="prev"
-        directionText="Previous"
-        onClickHandler={previous}
-      />
-      <CarouselControl
-        direction="next"
-        directionText="Next"
-        onClickHandler={next}
-      />
-    </Carousel>
-  );
+        <div className='h-screen mx-5 sm:mx-auto pt-32'>
+              <h1 className="sub-title" style={{textAlign: "center", color: "#213F99", fontFamily: "monospace",}}>My projects</h1>
+            <div className='max-w-5xl md:px-4 py-8 pb-32 mx-auto space-y-28'>
+                <section className='p-4 md:p-8 bg-gray-100 rounded-lg shadow-custom'>
+                    <h1 className='font-bold text-lg md:text-xl text-blue-500 pb-4'>Animesthetic Social Media</h1>
+                    <div className='grid grid-cols-1 gap-0 sm:gap-8 md:grid-cols-3 items-center overflow-hidden'>
+                        <blockquote className='sm:col-span-2'>
+                            <p className='text-xs md:text-base'>
+                                Animesthetic Social Media Web App project! This Django-based web application allows users to connect with friends,
+                                share updates, and engage in social networking activities.
+                                If you would like to contribute to this project, please visit my github and start contributing.
+                            </p>
+                            <cite className='inline-flex items-center mt-8 not-italic'>
+                                <span className='hidden w-6 h-px bg-gray-400 sm:inline-block'></span>
+                                <p className='text-xs md:text-base text-gray-500 sm:ml-3'>
+                                    Python, Javascript, HTML, Django, CSS, DbSqlite
+                                </p>
+                            </cite>
+                            <div className='flex pt-8 space-x-4'>
+                                <div>
+                                    <a href='https://github.com/prasad-chavan1/Animesthetic-Social-Media' target='_blank' rel='noopener noreferrer'>
+                                        <FiGithub size='30px' />
+                                    </a>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </section>
+<br/><br/>
+                <section className='p-4 md:p-8 bg-gray-100 rounded-lg shadow-custom'>
+                    <h1 className='font-bold text-lg md:text-xl text-blue-500 pb-4'>Animesthetic Social Media</h1>
+                    <div className='grid grid-cols-1 gap-0 sm:gap-8 md:grid-cols-3 items-center overflow-hidden'>
+                        <blockquote className='sm:col-span-2'>
+                            <p className='text-xs md:text-base'>
+                                Animesthetic Social Media Web App project! This Django-based web application allows users to connect with friends,
+                                share updates, and engage in social networking activities.
+                                If you would like to contribute to this project, please visit my github and start contributing.
+                            </p>
+                            <cite className='inline-flex items-center mt-8 not-italic'>
+                                <span className='hidden w-6 h-px bg-gray-400 sm:inline-block'></span>
+                                <p className='text-xs md:text-base text-gray-500 sm:ml-3'>
+                                    Python, Javascript, HTML, Django, CSS, DbSqlite
+                                </p>
+                            </cite>
+                            <div className='flex pt-8 space-x-4'>
+                                <div>
+                                    <a href='https://github.com/prasad-chavan1/Animesthetic-Social-Media' target='_blank' rel='noopener noreferrer'>
+                                        <FiGithub size='30px' />
+                                    </a>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </section>
+                <br/><br/>
+                <Certification />
+            </div>    
+            <footer style={{ color: '#000000',background: 'none', fontFamily:'monospace' }}>
+        Powered by @deodat04 <br /> Copyright © 2024 Tous droits réservés
+      </footer>        
+        </div>
+        
+    )
 }
 
 export default Project;

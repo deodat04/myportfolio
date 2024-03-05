@@ -24,9 +24,6 @@ function Home() {
             <h1 style={{ fontFamily: "monospace", color: "#213F99", fontSize: 30 }}>
             <Type /> 
             </h1>
-            {/* <p style={{ fontFamily: "monospace" }}>
-             console.log("Welcome in my world"){" "}
-            </p> */}
             <div className="social">
               <a href="https://github.com/deodat04">
                 <i className="bi bi-github"></i>

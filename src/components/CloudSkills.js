@@ -143,7 +143,7 @@ function CloudSkills() {
     return (
       <section className="tags-cloud" ref={cloudRef}>
         <ul className="tags-cloud-list">
-          <li className="tag">
+          <li className="tag" style={{ fontSize: '1.5em', color: 'blue' }}>
             <span className="wrap">HTML</span>
           </li>
           <li className='tag'> <span className='wrap'>CSS</span> </li>
@@ -169,6 +169,9 @@ function CloudSkills() {
             <li className='tag'> <span className='wrap'>Terminal</span> </li>
             <li className='tag'> <span className='wrap'>VirtualBox</span> </li>
         </ul>
+        <a href="project.php" className="bouton">
+            Download CV
+          </a>
       </section>
     );
   }

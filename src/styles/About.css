@@ -1,0 +1,46 @@
+.about-section {
+    
+    padding: 50px 0; 
+  }
+  
+  .quote-card-view {
+    box-shadow: #213F99; 
+  }
+  
+  .about-img {
+    padding-top: 100px; 
+  }
+  
+  .tags-cloud {
+    margin-left: 50px; 
+    
+  }
+  
+
+  
+  .tags-cloud {
+    /* position: absolute; 
+    top: 50%; 
+    left: 50%;  */
+    transform: translate(50%, -15%); 
+    background: none;
+    /* z-index: 1;  */
+  }
+  
+  .bouton {
+    display: block;
+    margin: -50px; /* Ajuster la marge pour centrer le bouton et réduire l'espace */
+    
+    width: fit-content;
+    border: 1px solid #213F99;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color: #000000;
+    text-decoration: none;
+    transition: background 0.75s;
+    z-index: 2; /* Pour placer le bouton au-dessus des autres éléments */
+  }
+  
+  .bouton:hover {
+    background: #213F99;
+  }

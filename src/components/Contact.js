@@ -127,9 +127,13 @@ function Contact() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div>  
+      </div> <br/><br/>
+      <footer style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>
+        Powered by @deodat04 <br /> Copyright © 2024 Tous droits réservés
+      </footer>
     </section>
+    
   );
 }
 
