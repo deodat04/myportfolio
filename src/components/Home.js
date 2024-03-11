@@ -12,13 +12,11 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import python from "../assets/python.png"
 import eventflow from "../assets/eventflow.png"
 import springboot from "../assets/spring-boot.png"
-
-
+import frontpic from "../assets/frontpicbg.png"
 
 function Home() {
   return (
     <div>
-      {/* <Header /> */}
       <section>
         <div className="main">
           <div className="detail">
@@ -45,10 +43,10 @@ function Home() {
             </div>
           </div>
           <div className="images">
-            <img src={picture} alt="" width="100%" />
+            <img src={frontpic} alt="" width="90%" />
           </div>
         </div>
-      </section>
+      </section><br/><br/>
 
       <div id="title_skills">
         <h1
