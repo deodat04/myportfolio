@@ -1,9 +1,6 @@
 import React from "react";
-// import Header from "./Header";
-import picture from "../assets/mitm2.jpg";
 import ContainerSkills from "./ContainerSkills";
 import Type from "./Type";
-import Project from "./Project";
 import "../styles/Home.css";
 import ContainerServices from "./ContainerServices";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -13,6 +10,7 @@ import python from "../assets/python.png"
 import eventflow from "../assets/eventflow.png"
 import springboot from "../assets/spring-boot.png"
 import frontpic from "../assets/frontpicbg.png"
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -139,9 +137,9 @@ function Home() {
               </div>
             </div>
           </div>
-          <a href={Project} className="btn">
+          <Link to="/project" className="btn">
             See more
-          </a>
+          </Link> 
         </div>
       </div>
       <footer style={{ color: '#000000',background: 'none', fontFamily:'monospace' }}>
