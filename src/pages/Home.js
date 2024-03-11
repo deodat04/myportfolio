@@ -1,8 +1,8 @@
 import React from "react";
-import ContainerSkills from "./ContainerSkills";
-import Type from "./Type";
+import ContainerSkills from "../components/ContainerSkills";
+import Type from "../components/Type";
 import "../styles/Home.css";
-import ContainerServices from "./ContainerServices";
+import ContainerServices from "../components/ContainerServices";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';

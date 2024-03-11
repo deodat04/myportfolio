@@ -1,12 +1,10 @@
-// import logo from './logo.svg';
-// import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from "./Layout";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
-import Contact from "./Contact";
-import Project from "./Project";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
+import Project from "../pages/Project";
 
 function App() {
     return (

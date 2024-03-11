@@ -144,31 +144,32 @@ function CloudSkills() {
     return (
       <section className="tags-cloud" ref={cloudRef}>
         <ul className="tags-cloud-list">
-          <li className="tag" style={{ fontSize: '1.5em', color: 'blue' }}>
+          <li className="tag" style={{ fontSize: '1em', color: 'blue' }}>
             <span className="wrap">HTML</span>
           </li>
           <li className='tag'> <span className='wrap'>CSS</span> </li>
-            <li className='tag'> <span className='wrap'>JavaScript</span> </li>
-            <li className='tag'> <span className='wrap'>Python</span> </li>
-            <li className='tag'> <span className='wrap'>C</span> </li>
-            <li className='tag'> <span className='wrap'>C++</span> </li>
-            <li className='tag'> <span className='wrap'>Php</span> </li>
-            <li className='tag'> <span className='wrap'>Bootstrap</span> </li>
-            <li className='tag'> <span className='wrap'>Java</span> </li>
-            <li className='tag'> <span className='wrap'>Illustrator</span> </li>
-            <li className='tag'> <span className='wrap'>Photoshop</span> </li>
-            <li className='tag'> <span className='wrap'>Xd</span> </li>
-            <li className='tag'> <span className='wrap'>Linux</span> </li>
-            <li className='tag'> <span className='wrap'>Github</span> </li>
-            <li className='tag'> <span className='wrap'>Canvas</span> </li>
-            <li className='tag'> <span className='wrap'>Cybersecurity</span> </li>
-            <li className='tag'> <span className='wrap'>Wordpress</span> </li>
-            <li className='tag'> <span className='wrap'>SpringBoot</span> </li>
-            <li className='tag'> <span className='wrap'>MySql</span> </li>
-            <li className='tag'> <span className='wrap'>Sketchup</span> </li>
-            <li className='tag'> <span className='wrap'>Bash</span> </li>
-            <li className='tag'> <span className='wrap'>Terminal</span> </li>
-            <li className='tag'> <span className='wrap'>VirtualBox</span> </li>
+            <li className='tag' style={{ fontSize: '1em', color: 'blue' }}> <span className='wrap'>JavaScript</span> </li>
+            <li className='tag' style={{ fontSize: '1em', color: 'blue' }}> <span className='wrap'>Python</span> </li>
+            <li className='tag' style={{ fontSize: '1em'}}> <span className='wrap'>C</span> </li>
+            <li className='tag' style={{ fontSize: '1em', color: 'blue' }}> <span className='wrap'>C++</span> </li>
+            <li className='tag' style={{ fontSize: '1em'}}> <span className='wrap'>Php</span> </li>
+            <li className='tag' style={{ fontSize: '1em'}}> <span className='wrap'>Bootstrap</span> </li>
+            <li className='tag' style={{ fontSize: '1em'}}> <span className='wrap'>Figma</span> </li>
+            <li className='tag' style={{ fontSize: '1em'}}> <span className='wrap'>Java</span> </li>
+            <li className='tag' style={{ fontSize: '1em', color: 'blue' }}> <span className='wrap'>Illustrator</span> </li>
+            <li className='tag' style={{ fontSize: '1em'}}> <span className='wrap'>Photoshop</span> </li>
+            <li className='tag' style={{ fontSize: '1em'}}> <span className='wrap'>Xd</span> </li>
+            <li className='tag' style={{ fontSize: '1em', color: 'blue' }}> <span className='wrap'>Linux</span> </li>
+            <li className='tag' style={{ fontSize: '1em'}}> <span className='wrap'>Github</span> </li>
+            <li className='tag' style={{ fontSize: '1em'}}> <span className='wrap'>Canvas</span> </li>
+            <li className='tag' style={{ fontSize: '1em', color: 'blue' }}> <span className='wrap'>Cybersecurity</span> </li>
+            <li className='tag' style={{ fontSize: '1em'}}> <span className='wrap'>Wordpress</span> </li>
+            <li className='tag' style={{ fontSize: '1em', color: 'blue' }}> <span className='wrap'>SpringBoot</span> </li>
+            <li className='tag' style={{ fontSize: '1em'}}> <span className='wrap'>MySql</span> </li>
+            <li className='tag' style={{ fontSize: '1em'}}> <span className='wrap'>Sketchup</span> </li>
+            <li className='tag' style={{ fontSize: '1em', color: 'blue' }}> <span className='wrap'>Bash</span> </li>
+            <li className='tag' style={{ fontSize: '1em', color: 'blue' }}> <span className='wrap'>Terminal</span> </li>
+            <li className='tag' style={{ fontSize: '1em'}}> <span className='wrap'>VirtualBox</span> </li>
         </ul>
         <a href={CV} className="bouton">
             Download CV

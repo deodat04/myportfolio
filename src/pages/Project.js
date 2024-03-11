@@ -1,6 +1,6 @@
 import { FiGithub } from 'react-icons/fi';
 import "../styles/Project.css";
-import Certification from './Certification';
+import Certification from '../components/Certification';
 
 const Project = () => {
     return (

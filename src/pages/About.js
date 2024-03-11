@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
-import CloudSkills from "./CloudSkills";
+import CloudSkills from "../components/CloudSkills";
 import "../styles/About.css"
 
 
