@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import CV from "../assets/CV_Déodat_ADANDEDJAN.pdf";
 
 
 function CloudSkills() {
@@ -169,7 +170,7 @@ function CloudSkills() {
             <li className='tag'> <span className='wrap'>Terminal</span> </li>
             <li className='tag'> <span className='wrap'>VirtualBox</span> </li>
         </ul>
-        <a href="project.php" className="bouton">
+        <a href={CV} className="bouton">
             Download CV
           </a>
       </section>

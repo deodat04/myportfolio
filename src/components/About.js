@@ -26,33 +26,34 @@ function About() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple" style={{ color: "#213F99" }}>Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            Hi Everyone, I am <span className="purple" style={{ color: "#213F99" }}>Déodat ADANDEDJAN </span>
+            from <span className="purple"> Benin.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
+            Je suis actuellement étudiant en 3ème année de License en Génie License en Génie Logiciel à l'Institut de Formation et de Recherche en Informatique(IFRI).
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            Je suis Developpeur Fullstack (Web & Mobile) mais j'ai également des profils Designer et d'Analyste SOC Junior.
+            <br />
+            Passionné par le domaine Informatique je suis toujours à la recherche de nouveaux défis, connaissances et compétences !
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            A part le développement, j'aime aussi :
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Ecouter la musique
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Faire des activites sportives
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Mener des oeuvres sociales et communautaires
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Not after, Now"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">@deodat04</footer>
         </blockquote>
       </Card.Body>
     </Card>
@@ -63,7 +64,6 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-             {/* <img src={picture} alt="" width="100%" /> */}
             <CloudSkills />
        
           </Col>

@@ -3,11 +3,16 @@ import React from "react";
 import picture from "../assets/mitm2.jpg";
 import ContainerSkills from "./ContainerSkills";
 import Type from "./Type";
+import Project from "./Project";
 import "../styles/Home.css";
 import ContainerServices from "./ContainerServices";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import python from "../assets/python.png"
+import eventflow from "../assets/eventflow.png"
+import springboot from "../assets/spring-boot.png"
+
 
 
 function Home() {
@@ -28,14 +33,14 @@ function Home() {
               <a href="https://github.com/deodat04">
                 <i className="bi bi-github"></i>
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/deodatadandedjan/">
                 <i className="bi bi-instagram"></i>
               </a>
               <a href="https://www.linkedin.com/in/d%C3%A9odat-adandedjan-4b2672241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
                 <i className="bi bi-linkedin"></i>
               </a>
-              <a href="#">
-                <i className="bi bi-facebook"></i>
+              <a href="https://wa.me/+22996704532">
+                <i className="bi bi-whatsapp"></i>
               </a>
             </div>
           </div>
@@ -105,38 +110,38 @@ function Home() {
             </a>
           </h3>
           <div className="work-list">
-            <div className="work">
-              <img src={picture} alt="" />
+            <div className="work">  
+              <img src={eventflow} alt="" />
               <div className="layer">
-                <h2 style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>Application C++</h2>
-                <p style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>With framework Qt</p>
-                <a href="https://github.com/deodat04">
+                <h2 style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>EventFlow</h2>
+                <p style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>Mobile App</p>
+                <a href="https://github.com/deodat04/EventFlow-Mobile_App.git">
                 <FontAwesomeIcon icon={faExternalLinkAlt} />
                 </a>
               </div>
             </div>
             <div className="work">
-              <img src={picture} alt="" />
+              <img src={springboot} alt="" />
               <div className="layer">
                 <h2 style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>API CRUD</h2>
-                <p style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>Java languages</p>
-                <a href="https://github.com/deodat04">
+                <p style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>SpringBoot</p>
+                <a href="https://github.com/deodat04/api_deodat04.git">
                 <FontAwesomeIcon icon={faExternalLinkAlt} />
                 </a>
               </div>
             </div>
             <div className="work">
-              <img src={picture} alt="" />
+              <img src={python} alt="" />
               <div className="layer">
-                <h2 style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>App mobile</h2>
-                <p style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>With Flutter</p>
-                <a href="https://github.com/deodat04">
+                <h2 style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>Python Programs</h2>
+                <p style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>Animation Turtle and others</p>
+                <a href="https://github.com/deodat04/Python.git">
                 <FontAwesomeIcon icon={faExternalLinkAlt} />
                 </a>
               </div>
             </div>
           </div>
-          <a href="project.php" className="btn">
+          <a href={Project} className="btn">
             See more
           </a>
         </div>

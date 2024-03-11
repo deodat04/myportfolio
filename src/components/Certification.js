@@ -2,8 +2,6 @@ import React from 'react';
 import NSE1 from "../assets/NSE1.png"
 import NSE2 from "../assets/NSE2.png"
 import NSE3 from "../assets/NSE3.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import portfolio from "../assets/portfolio_deodat04view.png";
 import ecommerce from "../assets/ecommerce_view.png";
 import sportiva from "../assets/sportiva_view.png";
@@ -13,7 +11,7 @@ const Certification = () => {
     return (
         <div className='p-4 md:p-8 bg-gray-100 rounded-lg'>
                 <h1 className="sub-title" style={{textAlign: "center", color: "#213F99", fontFamily: "monospace",}}>Others</h1>
-                <h4 className="sub-title" style={{textAlign: "center", color: "#000000", fontFamily: "monospace",}}>Certification Cybersecurity</h4>
+                <h4 className="sub-title" style={{textAlign: "center", color: "#000000", fontFamily: "monospace",}}>Cybersecurity Certificate</h4>
             <div className='row row-cols-1 row-cols-md-3 g-4 mt-4 d-flex justify-content-center'>
                 <div className='col d-flex justify-content-center'>
                     <div>
@@ -43,31 +41,19 @@ const Certification = () => {
             <div className="work">
               <img src={portfolio} alt="" />
               <div className="layer">
-                <h2 style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>Application C++</h2>
-                <p style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>With framework Qt</p>
-                <a href="https://github.com/deodat04">
-                <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </a>
+                <h2 style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>Portfolio HomePage</h2>
               </div>
             </div>
             <div className="work">
               <img src={ecommerce} alt="" />
               <div className="layer">
-                <h2 style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>API CRUD</h2>
-                <p style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>Java languages</p>
-                <a href="https://github.com/deodat04">
-                <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </a>
+                <h2 style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>Site ecommerce</h2>
               </div>
             </div>
             <div className="work">
               <img src={sportiva} alt="" />
               <div className="layer">
-                <h2 style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>App mobile</h2>
-                <p style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>With Flutter</p>
-                <a href="https://github.com/deodat04">
-                <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </a>
+                <h2 style={{ color: '#ffffff',background: 'none', fontFamily:'monospace' }}>Plateforme de Sport</h2>
               </div>
             </div>
           </div>

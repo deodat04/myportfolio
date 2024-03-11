@@ -11,16 +11,20 @@ router.post('/contact', async (req, res) => {
   // Configuration du transporter pour l'envoi d'e-mail
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
     auth: {
-      user: 'votre_adresse_email@gmail.com', // Adresse e-mail de l'expéditeur
-      pass: 'votre_mot_de_passe' // Mot de passe de l'expéditeur
-    }
+      user: 'radeladandedjan@gmail.com', // Adresse e-mail de l'expéditeur
+      pass: 'h a v m x t l r x f a p n x m c',
+       // Mot de passe de l'expéditeur
+    },
   });
 
   // Options de l'e-mail
   const mailOptions = {
     from: email, // L'adresse e-mail de l'expéditeur
-    to: 'adresse_email_destinataire@example.com', // Adresse e-mail du destinataire
+    to: 'deodatadandedjan2000@gmail.com', // Adresse e-mail du destinataire
     subject: subject,
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
   };

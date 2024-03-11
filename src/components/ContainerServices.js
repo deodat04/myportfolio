@@ -12,7 +12,7 @@ function ContainerServices() {
                     <div  style={{ color: '#fff' }}>
                         <FontAwesomeIcon icon={faAreaChart} className="fa-3x text-primary mb-3" style={{ background: 'none'}} />
                         <h2 style={{ color: '#000000',background: 'none', fontFamily:'monospace' }}>Mobile App Development</h2>
-                        <p style={{ color: '#000000',background: 'none', fontFamily:'monospace' }}>Développement d'application desktop en fonction des fonctionnalités demandées. <br /> Framework : Qt Creator <br /> Languages : C++.</p>
+                        <p style={{ color: '#000000',background: 'none', fontFamily:'monospace' }}>Développement d'application mobile Android & IOS. <br /><br /> Framework : Flutter</p>
                     </div>
                     <div>
                         <FontAwesomeIcon icon={faCode} className="fa-3x text-primary mb-3" style={{ background: 'none' }} />

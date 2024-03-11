@@ -22,7 +22,7 @@ function Contact() {
     }
 
     try {
-      await axios.post("/api/contact", state);
+      await axios.post("http://localhost:5000/api/contact", state);
       // Réinitialiser le formulaire après l'envoi
       setState({ name: "", email: "", subject: "", message: "" });
       alert("Form submitted successfully!");
@@ -46,7 +46,7 @@ function Contact() {
               <div className="row no-gutters">
                 <div className="col-md-6">
                   <div className="contact-wrap w-100 p-lg-5 p-4">
-                    <h3 className="mb-4">Send us a message</h3>
+                    <h3 className="mb-4">M'envoyer un message</h3>
                     <form
                       id="contactForm"
                       className="contactForm"
@@ -118,9 +118,9 @@ function Contact() {
                 </div>
                 <div className="col-md-6 d-flex align-items-stretch">
                   <div className="info-wrap w-100 p-lg-5 p-4 img">
-                    <h3>Contact us</h3>
+                    <h3>Get in touch</h3>
                     <p className="mb-4">
-                      We're open for any suggestion or just to have a chat
+                      Projets, Problèmes, Opportunuités, Questions? N'hésitez pas !
                     </p>
                   </div>
                 </div>
